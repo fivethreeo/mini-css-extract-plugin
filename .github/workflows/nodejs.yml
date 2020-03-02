@@ -20,6 +20,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install
     - run: yarn add ${{ matrix.webpack-version }}
-    - run: yarn run test:only
+    - run: yarn run test:coverage
       env:
         CI: true
